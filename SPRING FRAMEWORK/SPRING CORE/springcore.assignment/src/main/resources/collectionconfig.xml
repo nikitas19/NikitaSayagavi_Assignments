@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="https://www.springframework.org/schema/context"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+ 
+ <bean class="springcore.assignment.q2.Question" name="question1" >
+ <property name="questionId" value="01" />
+ <property name="question" value="What is java? " />
+ </bean>
+ 
+ <bean>
+ 	<property name="answers">
+ 	<list>
+ 	<value>java</value>
+ 	<value>python</value>
+ 	<value>c++</value>
+ 	</list>
+ 	</property>
+ </bean>
+ 
+ <bean>
+ 	<property name="answers2">
+ 	<set>
+ 	<value>java</value>
+ 	<value>python</value>
+ 	<value>c++</value>
+ 	</set>
+ 	</property>
+ </bean>
+ 
+ <bean>
+ 	<property name="answer3">
+ 	<map>
+ 	<entry key="01" value="java" />
+ 	<entry key="02" value="pyhton" />
+ 	<entry key="03" value="c++" />
+ 	</map>
+ 	</property>
+ </bean>
+ 
+ </beans>
+ 
