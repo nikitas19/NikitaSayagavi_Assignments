@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Assignment-3 Q-2
+        </title>
+    </head>
+    <body>
+        <script>
+           function Rectangle(width,height)
+            {
+                this.width=width;
+                this.height=height;
+            }
+           Rectangle.prototype.getArea=function(){
+              return this.height * this.width;
+           }  
+           const obj = new Rectangle(3, 5);
+           const obj2 = new Rectangle(10, 6); 
+           document.write(obj.getArea());
+           document.write("<br>");
+           document.write(obj2.getArea());
+        </script>
+    </body>
+</html>
